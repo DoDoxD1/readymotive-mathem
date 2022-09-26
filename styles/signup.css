@@ -8,7 +8,7 @@
 
 .container{
     width: 100%;
-    height: 110vh;
+    height: 130vh;
     background-color: #26263a;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
 
 .form{
     width: 30%;
-    height: 60vh;
+    height: 90vh;
     padding: 4rem;
     background-color: white;
     border-radius: 1rem;
@@ -79,7 +79,6 @@
     border: #a4a4a4 solid 1px;
     padding: .5rem;
     border-radius: .5rem;
-    margin-bottom: 1rem;
 }
 label{
     color: #7d7d89;
@@ -94,6 +93,7 @@ input:focus{
 }
 
 button{
+    margin-top: 1rem;
     background-color: #f9535c;
     border: none;
     color: white;
@@ -110,10 +110,10 @@ button{
     align-items: center;
 }
 
-.forgot{
+.terms{
     margin-top: 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+    text-align: center;
+    font-size: .8rem;
 }
 
 .sign-up{
