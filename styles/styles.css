@@ -6,6 +6,11 @@
     font-family: 'Poppins', 'Noto Sans', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #26263a;
+}
+
 .fixed{
     position: fixed;
     width: 100%;
@@ -91,6 +96,7 @@
     background-color: white;
     height: 3rem;
     padding: 0rem 9%;
+    color: #26263a;
     align-items: center;
     justify-content: space-between;
 }
