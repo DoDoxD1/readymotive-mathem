@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Noto Sans', sans-serif;
+}
+
+.logocontainer{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: rgb(215, 215, 215) 1px solid;
+}
+
+.logo{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;;
+    color: #28af62;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.logo2{
+    font-family: 'Dancing Script', cursive;;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+    border-right: rgb(215, 215, 215) solid 1px;
+}
+.sidebar ul{
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+.sidebar li{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: .5rem;
+    border-radius: .5rem;
+    align-items: center;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 2.2rem;
+}
+.sidebar li img{
+    margin-right: .3rem;
+}
+.sidebar a{
+    color: #6ecc96;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.sidebar a:active,
+.sidebar li:hover{
+    background-color: #e1ffe3;
+}
