@@ -7,15 +7,21 @@
     font-family: 'Poppins', 'Noto Sans', sans-serif;
 }
 
+.main-container{
+    display: flex;
+}
+
 .logocontainer{
     text-align: center;
     padding: 1rem;
+    height: 3rem;
     border-bottom: rgb(215, 215, 215) 1px solid;
 }
 
 .logo{
     display: inline-block;
     text-align: center;
+    align-items: center;
     font-family: 'Dancing Script', cursive;;
     color: #28af62;
     font-size: 2rem;
@@ -63,4 +69,37 @@
 .sidebar a:active,
 .sidebar li:hover{
     background-color: #e1ffe3;
+}
+
+.container{
+    width: 85%;
+}
+
+.topbar{
+    height: 80px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.searchbar{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.searchbar form{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin-left: 1rem;
+}
+.searchbar button{
+    background-color: transparent;
+    border: none;
+}
+.searchbar input{
+    margin-left: 1rem;
+    border: none;
+    width: 40vw;
+}
+.searchbar input:focus{
+    outline: none;
 }
