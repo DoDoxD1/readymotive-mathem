@@ -25,7 +25,7 @@
             </div>
             <div class="end-button">
                 <img class="notification" src="src/images/notification.png" alt="">
-                <button class="cart-button">
+                <button class="cart-button" id="cart-button">
                     <img src="src/images/cart.png" alt="">
                     Shopping cart</button>
             </div>
@@ -643,6 +643,29 @@
         <img src="src/images/footer1.png" alt="">
         You are in store: Readymotive.
     </div>
+
+
+    <div class="cart-container"id="cart">
+    <div class="shadow"></div>
+    <div class="cart" >
+        <div class="cart-head">
+            <h3>Shopping Cart</h3>
+            <p class="close-cart" id="close-cart">Keep on shopping</p>
+        </div>
+        <div class="cart-items">
+            <img src="src/images/basket.png" alt="">
+            <h4>Oops, your cart is empty.</h4>
+            <p>Start shopping, and the shopping cart will start filling up here</p>
+        </div>
+        <div class="cart-bottom">
+            <div class="cart-bottom-left">
+                <p>Stage 1/2</p>
+                <h4>Shopping cart</h4>
+            </div>
+            <button>To the checkout</button>
+        </div>
+    </div>
+</div>
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
@@ -660,6 +683,18 @@ var flkty = new Flickity( elem, {
 var flkty = new Flickity( '.main-carousel', {
   // options
 });
+
+document.getElementById("cart-button").onclick = function() {
+  document.getElementById("cart").style.display = "block";
+}
+
+document.getElementById("close-cart").onclick = function(){
+    document.getElementById("cart").style.display = "none";
+}
+
+document.getElementsByClassName("product").onclick = function(){
+    document.getElementById("product-desc").style.display = 'block';
+}
 </script>
 
 </html>

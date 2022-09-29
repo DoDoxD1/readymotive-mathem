@@ -86,9 +86,13 @@ a{
     padding: .3rem 1.8rem;
     color: white;
     font-weight: 800;
+    cursor: pointer;
 }
 .cart-button img{
     margin-right: .2rem;
+}
+.cart-button:hover{
+    background-color: #b84550;
 }
 
 .navbar{
@@ -489,6 +493,91 @@ a{
 .footer img{
     margin-bottom: 9rem;
 }
+
+
+.cart-container{
+    display: none;
+}
+.shadow{
+    width: 65%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(30, 30, 30, 0.3);
+}
+.cart{
+    width: 35%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background-color: white;
+}
+.cart-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #ffecc7;
+}
+.cart-head h3{
+    font-size: 1.5rem;
+    color: #26263a;
+}
+.cart-head p{
+    font-size: .9rem;
+}
+.cart-items{
+    display: flex;
+    padding: 1.5rem;
+    height: 70vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-items h4{
+    margin: 1rem 0rem;
+    font-size: 1.5rem;
+}
+.cart-items img{
+    background-color: #f5f9f9;
+    height: 30px;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+.cart-items p{
+    text-align: center;
+    font-size: .8rem;
+}
+.cart-bottom{
+    border-radius: 5rem;
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px 0px#b9b9b9;
+    margin: 1rem;
+}
+.cart-bottom p{
+    font-size: .8rem;
+    color: rgb(200, 200, 200);
+}
+.cart-bottom button{
+    background-color: rgb(200, 200, 200);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 5rem;
+    margin-right: -1.5rem;
+}
+#close-cart{
+    cursor: pointer;
+}
+
 /* flickty */
 .carousel-cell{
     margin-right: 1rem;
