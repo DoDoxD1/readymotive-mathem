@@ -219,6 +219,7 @@ a{
     width: 12rem;
     display: inline-block;
     padding: 1rem;
+    cursor: pointer;
 }
 .product p{
     font-size: .8rem;
@@ -577,6 +578,79 @@ a{
 #close-cart{
     cursor: pointer;
 }
+
+.product-desc{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #1414144b;
+    z-index: 5;
+}
+.desc-container{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    border-radius: 1rem;
+    background-color: white;
+}
+.desc-left{
+    width: 24%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#product-img{
+    height: 15rem;
+    width: 15rem;
+}
+.desc-right{
+    width: 65%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.desc-right h4{
+    margin-bottom: .5rem;
+}
+.wieght{
+    display: flex;
+    justify-content: space-between;
+}
+.wieght button{
+    padding: .2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+}
+.wieght button:hover{
+    color: #f9535c;
+    background-color: rgb(195, 195, 195);
+}
+.origin{
+    align-items: center;
+    color: #666666;
+}
+.origin h4{
+    color: #26263a;
+}
+.close-button{
+    position: fixed;
+    height: 20px;
+    top: 25px;
+    right: 25px;
+    background-color: #e2eeee;
+    border-radius: 5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
 
 /* flickty */
 .carousel-cell{

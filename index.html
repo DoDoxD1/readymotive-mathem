@@ -645,56 +645,115 @@
     </div>
 
 
-    <div class="cart-container"id="cart">
-    <div class="shadow"></div>
-    <div class="cart" >
-        <div class="cart-head">
-            <h3>Shopping Cart</h3>
-            <p class="close-cart" id="close-cart">Keep on shopping</p>
-        </div>
-        <div class="cart-items">
-            <img src="src/images/basket.png" alt="">
-            <h4>Oops, your cart is empty.</h4>
-            <p>Start shopping, and the shopping cart will start filling up here</p>
-        </div>
-        <div class="cart-bottom">
-            <div class="cart-bottom-left">
-                <p>Stage 1/2</p>
-                <h4>Shopping cart</h4>
+    <div class="cart-container" id="cart">
+        <div class="shadow"></div>
+        <div class="cart">
+            <div class="cart-head">
+                <h3>Shopping Cart</h3>
+                <p class="close-cart" id="close-cart">Keep on shopping</p>
             </div>
-            <button>To the checkout</button>
+            <div class="cart-items">
+                <img src="src/images/basket.png" alt="">
+                <h4>Oops, your cart is empty.</h4>
+                <p>Start shopping, and the shopping cart will start filling up here</p>
+            </div>
+            <div class="cart-bottom">
+                <div class="cart-bottom-left">
+                    <p>Stage 1/2</p>
+                    <h4>Shopping cart</h4>
+                </div>
+                <button>To the checkout</button>
+            </div>
         </div>
     </div>
-</div>
+
+
+    <div class="product-desc" id="product-desc">
+        <div id="close-desc" class="close-button">
+            <img src="src/images/close.png" alt="" height="20">
+        </div>
+        <div class="desc-container">
+            <div class="desc-left">
+                <img id="product-img" src="src/images/potato.jpg" alt="">
+                <h3>Potatoes Boil/Solid</h3>
+                <div class="wieght">
+                    <p>900 g</p>
+                    <button>Fruit & Vegetables</button>
+                </div>
+                <div class="origin">
+                    <img src="src/images/origin.png" alt="" height="18">
+                    Origin
+                    <h4>Sweden</h4>
+                </div>
+                <div class="markings">
+                    <img src="src/images/markings.png" alt="" height="15">
+                    Markings
+                    <h4>Swedish origin</h4>
+                </div>
+            </div>
+            <div class="desc-right">
+                <div>
+                    <h4>Product information</h4>
+                    <p>
+                        Firm potatoes suitable for boiling and frying. Also goes well in salads.<br>
+                        This is grown on Östra fornå's farm in Östergötland. A family business in the 6th generation!
+                        They specialize in growing potatoes and are among the best growers in Sweden according to us at
+                        MatHem.</p>
+                </div>
+                <div>
+                    <h4>Good to know</h4>
+                    <p>Note, changes in the products' content may occur. Therefore, always check the product information
+                        on the packaging. For questions about the contents of non-prepackaged food, contact Customer
+                        Service.</p>
+                </div>
+                <div>
+                    <h4>Storage</h4>
+                    <p>Always store your potatoes in a dark and cool place, preferably at + 4-6°C. Put it in the fridge
+                        if you don't have a pantry. Then the potatoes last longer, retain their fine quality and taste
+                        as good as freshly harvested when you cook them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 <script>
     var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true,
-  groupCells: 5
-});
+    var flkty = new Flickity(elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        groupCells: 5
+    });
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-});
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity('.main-carousel', {
+        // options
+    });
 
-document.getElementById("cart-button").onclick = function() {
-  document.getElementById("cart").style.display = "block";
-}
+    document.getElementById("cart-button").onclick = function () {
+        document.getElementById("cart").style.display = "block";
+    }
 
-document.getElementById("close-cart").onclick = function(){
-    document.getElementById("cart").style.display = "none";
-}
+    document.getElementById("close-cart").onclick = function () {
+        document.getElementById("cart").style.display = "none";
+    }
 
-document.getElementsByClassName("product").onclick = function(){
-    document.getElementById("product-desc").style.display = 'block';
-}
+    document.getElementById("close-desc").onclick = function () {
+        document.getElementById("product-desc").style.display = "none";
+    }
+
+    var products = document.getElementsByClassName("product");
+
+    for (var i = 0; i < products.length; i++) {
+        products[i].onclick = function () {
+            document.getElementById("product-desc").style.display = "flex";
+        }
+    }
+
+
 </script>
 
 </html>
