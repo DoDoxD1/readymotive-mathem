@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
     <div class="main-container">
@@ -23,7 +24,9 @@
             <li> <img src="src/images/message.png" alt="" height="22"> <a href="">Message</a></li>
             <li> <img src="src/images/top.png" alt="" height="22"> <a href="">Top Deals</a></li>
             <li> <img src="src/images/settings.png" alt="" height="22"> <a href="">Settings</a></li>
+            <button id="logout-button"><img src="src/images/logout.png" alt="" height="20"> Log Out</button>    
         </ul>
+        
     </div>
     <div class="container">
         <div class="topbar">
@@ -34,7 +37,154 @@
                 </form>
             </div>
         </div>
+        <div class="dashboard">
+        <div class="categories">
+            <div class="heading">
+
+                <h3>Categories</h3>
+            </div>
+            <div class="main-carousel">
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+            <div class="category carousel-cell">
+                <img src="src/images/fruits.png" alt="">
+                <h4>Fruits</h4>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="heading">
+        <h3>Popular Products</h3>
+        <a href="">View More</a>
+    </div>
+        <div class="products-container">
+            <div class="product">
+                <img src="src/images/potato.jpg" alt="" height="100">
+                <h4>Potatoes</h4>
+                Lorem ipsum dolor sd.
+                <div class="price">
+                    <div style="display: flex; align-items: center;">
+                    <h3> $20.10</h3>/per kg</div>
+                    <button>
+                        <img src="src/images/add.png" alt="" height="18">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="src/images/potato.jpg" alt="" height="100">
+                <h4>Potatoes</h4>
+                Lorem ipsum dolor sd.
+                <div class="price">
+                    <div style="display: flex; align-items: center;">
+                    <h3> $20.10</h3>/per kg</div>
+                    <button>
+                        <img src="src/images/add.png" alt="" height="18">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="src/images/potato.jpg" alt="" height="100">
+                <h4>Potatoes</h4>
+                Lorem ipsum dolor sd.
+                <div class="price">
+                    <div style="display: flex; align-items: center;">
+                    <h3> $20.10</h3>/per kg</div>
+                    <button>
+                        <img src="src/images/add.png" alt="" height="18">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="src/images/potato.jpg" alt="" height="100">
+                <h4>Potatoes</h4>
+                Lorem ipsum dolor sd.
+                <div class="price">
+                    <div style="display: flex; align-items: center;">
+                    <h3> $20.10</h3>/per kg</div>
+                    <button>
+                        <img src="src/images/add.png" alt="" height="18">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="src/images/potato.jpg" alt="" height="100">
+                <h4>Potatoes</h4>
+                Lorem ipsum dolor sd.
+                <div class="price">
+                    <div style="display: flex; align-items: center;">
+                    <h3> $20.10</h3>/per kg</div>
+                    <button>
+                        <img src="src/images/add.png" alt="" height="18">
+                    </button>
+                </div>
+            </div>
+        </div>
+</div>
+    </div>
     </div>
 </div>
 </body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity(elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        groupCells: 9,
+        pageDots: false,
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity('.main-carousel', {
+        // options
+    });
+</script>
 </html>
