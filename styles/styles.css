@@ -609,6 +609,9 @@ a{
     height: 15rem;
     width: 15rem;
 }
+.mobile-desc{
+    display: none;
+}
 .desc-right{
     width: 65%;
     margin-bottom: 2rem;
@@ -679,7 +682,7 @@ a{
         height: 8rem;
     }
     .search-box{
-        width: 70%;
+        width: 85%;
     }
     .navbar{
         display: none;
@@ -803,6 +806,18 @@ a{
         grid-template-columns: repeat(2,1fr);
         grid-row-gap: 2rem;
         row-gap: 2rem;
+    }
+    .desc-container{
+        justify-content: center;
+    }
+    .desc-left{
+        width: 95%;
+    }
+    .desc-right{
+        display: none;
+    }
+    .mobile-desc{
+        display: inline-block;
     }
 
     .main-carousel{
