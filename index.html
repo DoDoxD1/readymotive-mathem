@@ -11,8 +11,28 @@
 </head>
 
 <body>
+    <div class="navigation-mob" id="navigation-mob">
+        <span>Mathem</span>
+        <img src="src/images/close.png" alt="" id="close-nav" height="30">
+        <ul>
+            <li>Sign in</li>
+            <li>New Customer</li>
+        </ul>
+        <h3>Explore</h3>
+        <ul>
+            <li>Prescrition</li>
+            <li>Extra</li>
+            <li>Food</li>
+            <li>Eklo varar</li>
+            <li>Recepie</li>
+        </ul>
+    </div>
     <div class="fixed">
         <div class="topbar">
+            <div class="mob-nav">
+                <img src="src/images/menu.png" alt="" height="25" id="menu">
+                <img src="src/images/notification.png" alt="">
+            </div>
             <label class="logo">Mathem</label>
             <div class="search-box">
                 <form action="">
@@ -724,6 +744,12 @@
             </div>
         </div>
     </div>
+    <div class="bottomnav">
+        <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Home </div>
+        <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Categories </div>
+        <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Favorite </div>
+        <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Cart </div>
+    </div>
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
@@ -760,6 +786,14 @@
         products[i].onclick = function () {
             document.getElementById("product-desc").style.display = "flex";
         }
+    }
+
+    document.getElementById("menu").onclick = function () {
+        document.getElementById("navigation-mob").style.display = "block";
+    }
+
+    document.getElementById("close-nav").onclick = function () {
+        document.getElementById("navigation-mob").style.display = "none";
     }
 
 
