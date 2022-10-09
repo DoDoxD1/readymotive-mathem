@@ -111,6 +111,12 @@ a{
 .navbar ul li{
     margin-right: 1rem;
     list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li img{
+    margin-left: .3rem;
 }
 
 .discount{
@@ -661,6 +667,27 @@ a{
 }
 .navigation-mob{
     display: none;
+}
+
+.dropdown{
+    display: none;
+}
+
+.navbar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    border-radius: 1rem;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
 }
 
 
