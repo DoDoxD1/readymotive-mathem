@@ -748,7 +748,7 @@
         <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Home </div>
         <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Categories </div>
         <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Favorite </div>
-        <div class="nav-bot"> <img src="src/images/categories.png" alt="" height="30"> Cart </div>
+        <div class="nav-bot" id="cart-button-bottom"> <img src="src/images/categories.png" alt="" height="30"> Cart </div>
     </div>
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -769,6 +769,10 @@
     });
 
     document.getElementById("cart-button").onclick = function () {
+        document.getElementById("cart").style.display = "block";
+    }
+
+    document.getElementById("cart-button-bottom").onclick = function () {
         document.getElementById("cart").style.display = "block";
     }
 

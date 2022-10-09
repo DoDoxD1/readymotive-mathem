@@ -867,6 +867,9 @@ a{
     }
 
   @media only screen and (max-width: 600px) {
+    .cart-container{
+        width: 100%;
+    }
     .fixed{
         width: 100%;
         position: inherit;
@@ -1096,4 +1099,5 @@ a{
         top: 1.8rem;
         right: 1.5rem;
     }
+  }
   }
