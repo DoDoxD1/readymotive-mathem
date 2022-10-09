@@ -40,6 +40,7 @@
     height: 100vh;
     background-color: white;
     border-right: rgb(215, 215, 215) solid 1px;
+    z-index: 2;
 }
 .sidebar ul{
     padding: 1rem;
@@ -157,9 +158,10 @@
 }
 .products-container{
     margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row-gap: 2rem;
+    row-gap: 1rem;
 }
 .product{
     background-color: white;
@@ -193,8 +195,52 @@
     background-color: #28af62;
 }
 
+#menu-button{
+    display: none;
+}
+
 /* flickty */
 .main-carousel{
     overflow: hidden;
     padding: 1.5rem 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar{
+        display: none;
+        width: 80%;
+    }
+    .topbar{
+        display: flex;
+        align-items: center;
+    }
+    #menu-button{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    .searchbar input{
+        width: 100%;
+        padding: .8rem;
+        border-radius: 1rem;
+    }
+    #logout-button{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .products-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .heading{
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .main-carousel{
+        overflow: hidden;
+        padding: 0rem 3.5rem;
+        width: 60vw;
+    }
 }

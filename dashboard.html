@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="main-container">
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="logocontainer">
             <span class="logo">Ready </span> 
             <span class="logo2">Shop</span>
@@ -30,10 +30,11 @@
     </div>
     <div class="container">
         <div class="topbar">
+            <img id="menu-button" src="src/images/menu_green.png" alt="" height="25">
             <div class="searchbar">
                 <form action="">
                     <button type="submit"><img src="src/images/searchgreen.png" alt="" height="30"></button>
-                    <input type="text" name="" id="" placeholder="Search your grocery products etc...">
+                    <input type="text" name="" id="" placeholder="Search your grocery...">
                 </form>
             </div>
         </div>
@@ -177,7 +178,7 @@
         // options
         cellAlign: 'left',
         contain: true,
-        groupCells: 9,
+        groupCells: 1,
         pageDots: false,
     });
 
@@ -186,5 +187,16 @@
     var flkty = new Flickity('.main-carousel', {
         // options
     });
+     var open =false;
+    document.getElementById("menu-button").onclick = function(){
+        if(open==false){
+            open=true;
+            document.getElementById("sidebar").style.display = 'block';
+        }
+        else{
+            open = false;
+            document.getElementById("sidebar").style.display = 'none';
+        }
+    }
 </script>
 </html>
