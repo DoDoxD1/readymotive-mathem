@@ -768,12 +768,22 @@
         // options
     });
 
+    var cartopen = false;
+
     document.getElementById("cart-button").onclick = function () {
         document.getElementById("cart").style.display = "block";
     }
 
     document.getElementById("cart-button-bottom").onclick = function () {
-        document.getElementById("cart").style.display = "block";
+        if(cartopen == false){
+            document.getElementById("cart").style.display = "block";
+            cartopen = true;
+        }
+        else{
+            document.getElementById("cart").style.display = "none";
+            cartopen = false;
+        }
+        
     }
 
     document.getElementById("close-cart").onclick = function () {

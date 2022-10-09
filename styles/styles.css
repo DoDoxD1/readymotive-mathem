@@ -865,10 +865,17 @@ a{
         top: 1.8rem;
         right: 1.5rem;
     }
+    .cart{
+        width: 55%;
+    }
+}
 
   @media only screen and (max-width: 600px) {
-    .cart-container{
+    .cart{
         width: 100%;
+    }
+    .cart-bottom{
+        margin: 0px;
     }
     .fixed{
         width: 100%;
