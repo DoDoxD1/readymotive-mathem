@@ -234,6 +234,7 @@ a{
 .product h4{
     font-size: .9rem;
     font-weight: 500;
+    margin-bottom: 2rem;
 }
 .poster {
     display: flex;
@@ -598,23 +599,64 @@ a{
     z-index: 8;
     
 }
+.product-desc h4{
+    margin-top: 1rem;
+    color: #616161;
+    font-weight: 400;
+    font-size: .9rem;
+}
 #close-desc{
-    top: 100px;
-    right: 180px;
+    top: 25px;
+    right: 30%;
+    position: fixed;
 }
 .desc-container{
     display: flex;
-    width: 80%;
-    height: 80vh;
+    flex-direction: column;
+    width: 45%;
+    height: 100vh;
     border-radius: 1rem;
     background-color: white;
     overflow: hidden;
     overflow-y: scroll;
     position: relative;
 }
+.buy-button{
+    position: fixed;
+    bottom: 2rem;
+    width: 20%;
+    height: 4rem;
+    right: 40%;
+    display: flex;
+    background-color: white;
+    padding-left: 1.5rem;
+    padding-right: .8rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 20px #888888;
+    font-size: .8rem;
+}
+.buy-button div{
+    height: 5rem;
+}
+.buy-button h4{
+    color: #f9535c;
+    font-size: 1.1rem;
+}
+.buy-button button{
+    font-weight: 550;
+    background-color: #f9535c;
+    border: none;
+    height: 2rem;
+    padding: 0rem 2rem;
+    border-radius: 1rem;
+    color: white;
+    margin-left: 1rem;
+}
 .desc-left{
-    width: 24%;
-    padding: 3%;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -622,13 +664,14 @@ a{
 #product-img{
     height: 15rem;
     width: 15rem;
+    margin: 2rem auto;
 }
 .mobile-desc{
     display: none;
 }
 .desc-right{
-    width: 65%;
-    margin-top: 30rem !important;
+    width: 80%;
+    margin: auto;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -1073,7 +1116,11 @@ a{
     .desc-left{
         justify-content: space-evenly;
         width: 95%;
-        margin-top: 45rem;
+        margin-top: 12rem;
+    }
+    .buy-button{
+        left: 10%;
+        width: 70%;
     }
     .desc-left div{
         margin-top: 1rem;
