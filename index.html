@@ -733,10 +733,26 @@
             </div>
             <div class="desc-left">
                 <img id="product-img" src="src/images/potato.jpg" alt="">
+                <div class="images">
+                    <img src="src/images/heart.png" alt="" height="30">
+                    <img src="src/images/sweden.png" alt="" height="40">
+                </div>
+                <div class="category">
+                    <img src="src/images/category.png" alt="" height="15">
+                    / <a href="#">Fruit & Vegetables</a> / <a href="#">Potatoes & Onions</a> / <a href="#">Potato</a> / <a href="#">Potato Firm</a>
+                </div>
                 <h3>Potatoes Boil/Solid</h3>
                 <div class="wieght">
                     <p>900 g</p>
                     <button>Fruit & Vegetables</button>
+                </div>
+                <div class="product-info">
+                    <h4>Product information</h4>
+                    <p class="content">
+                        Firm potatoes suitable for boiling and frying. Also goes well in salads.<br>
+                        This is grown on Östra fornå's farm in Östergötland. A family business in the 6th generation!
+                        They specialize in growing potatoes and are among the best growers in Sweden according to us at
+                        MatHem.</p>
                 </div>
                 <div class="origin">
                     <img src="src/images/origin.png" alt="" height="18">
@@ -746,14 +762,9 @@
                 <div class="markings">
                     <img src="src/images/markings.png" alt="" height="15">
                     markings
+                    <h4>Sweedish origin</h4>
                 </div>
                 <div class="mobile-desc">
-                    <h4>Product information</h4>
-                    <p>
-                        Firm potatoes suitable for boiling and frying. Also goes well in salads.<br>
-                        This is grown on Östra fornå's farm in Östergötland. A family business in the 6th generation!
-                        They specialize in growing potatoes and are among the best growers in Sweden according to us at
-                        MatHem.</p>
                         <h4>Good to know</h4>
                         <p>Note, changes in the products' content may occur. Therefore, always check the product information
                             on the packaging. For questions about the contents of non-prepackaged food, contact Customer
@@ -766,14 +777,7 @@
 
             </div>
             <div class="desc-right">
-                <div>
-                    <h4>Product information</h4>
-                    <p>
-                        Firm potatoes suitable for boiling and frying. Also goes well in salads.<br>
-                        This is grown on Östra fornå's farm in Östergötland. A family business in the 6th generation!
-                        They specialize in growing potatoes and are among the best growers in Sweden according to us at
-                        MatHem.</p>
-                </div>
+                
                 <div>
                     <h4>Good to know</h4>
                     <p>Note, changes in the products' content may occur. Therefore, always check the product information
@@ -786,6 +790,7 @@
                         if you don't have a pantry. Then the potatoes last longer, retain their fine quality and taste
                         as good as freshly harvested when you cook them.</p>
                 </div>
+                <div class="space"></div>
             </div>
         </div>
     </div>
@@ -854,6 +859,21 @@
     document.getElementById("close-nav").onclick = function () {
         document.getElementById("navigation-mob").style.display = "none";
     }
+
+    var coll = document.getElementsByClassName("product-info");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = document.getElementById("content");
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+}
 
 
 </script>

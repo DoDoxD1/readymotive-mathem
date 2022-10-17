@@ -599,6 +599,25 @@ a{
     z-index: 8;
     
 }
+.images{
+    display: flex;
+    margin: .5rem 0rem;
+    justify-content: space-between;
+}
+.category{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+.category img{
+    margin-right: .3rem;
+}
+.category a{
+    font-size: .8rem;
+    margin: 0rem .3rem;
+}
 .product-desc h4{
     margin-top: 1rem;
     color: #616161;
@@ -620,6 +639,9 @@ a{
     overflow: hidden;
     overflow-y: scroll;
     position: relative;
+}
+.space{
+    height: 7.5rem;
 }
 .buy-button{
     position: fixed;
@@ -648,9 +670,9 @@ a{
     font-weight: 550;
     background-color: #f9535c;
     border: none;
-    height: 2rem;
+    height: 2.5rem;
     padding: 0rem 2rem;
-    border-radius: 1rem;
+    border-radius: 5rem;
     color: white;
     margin-left: 1rem;
 }
@@ -660,6 +682,9 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.desc-left h3{
+    margin: 1rem 0rem;
 }
 #product-img{
     height: 15rem;
@@ -680,6 +705,16 @@ a{
 .desc-right h4{
     margin-bottom: .5rem;
 }
+.product-info{
+    margin-top: 2rem;
+    padding: 0rem 1rem 1rem 1rem;
+    border: 1px solid gray;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+.product-info p{
+    margin-top: .5rem;
+}
 .wieght{
     display: flex;
     justify-content: space-between;
@@ -694,12 +729,26 @@ a{
     color: #f9535c;
     background-color: rgb(195, 195, 195);
 }
-.origin{
+.origin, .markings{
     align-items: center;
     color: #666666;
+    margin-top: 2rem;
 }
 .origin h4{
     color: #26263a;
+    font-weight: 550;
+    margin-top: 0rem;
+    margin-left: 1.4rem;
+}
+.markings{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.markings h4{
+    color: #26263a;
+    font-weight: 550;
+    margin-top: 0rem;
+    margin-left: 1.4rem;
 }
 .close-button{
     position: fixed;
@@ -1116,7 +1165,8 @@ a{
     .desc-left{
         justify-content: space-evenly;
         width: 95%;
-        margin-top: 12rem;
+        margin-top: 40rem;
+        margin-bottom: 10rem;
     }
     .buy-button{
         left: 10%;
