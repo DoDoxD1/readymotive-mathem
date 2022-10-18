@@ -747,8 +747,11 @@
                     <button>Fruit & Vegetables</button>
                 </div>
                 <div class="product-info">
-                    <h4>Product information</h4>
-                    <p class="content">
+                    <div class="info-heading">
+                        <h4>Product information</h4>
+                        <img id="open-info" src="src/images/down.png" alt="" height="25">
+                    </div>
+                    <p class="content" id="content">
                         Firm potatoes suitable for boiling and frying. Also goes well in salads.<br>
                         This is grown on Östra fornå's farm in Östergötland. A family business in the 6th generation!
                         They specialize in growing potatoes and are among the best growers in Sweden according to us at
@@ -867,10 +870,13 @@
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = document.getElementById("content");
+        img = document.getElementById('open-info');
         if (content.style.display === "block") {
         content.style.display = "none";
+        img.src = "src/images/down.png";
         } else {
         content.style.display = "block";
+        img.src = "src/images/up.png";
         }
     });
 }
