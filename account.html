@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | ReadyMotive</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/account.css">
+</head>
+<body>
+
+    <div class="navigation-mob" id="navigation-mob">
+        <span>Mathem</span>
+        <img src="src/images/close.png" alt="" id="close-nav" height="30">
+        <ul>
+            <li>Sign in</li>
+            <li>New Customer</li>
+        </ul>
+        <h3>Explore</h3>
+        <ul>
+            <li>Prescrition</li>
+            <li>Extra</li>
+            <li>Food</li>
+            <li>Eklo varar</li>
+            <li>Recepie</li>
+        </ul>
+    </div>
+    <div class="fixed">
+        <div class="topbar">
+            <div class="mob-nav">
+                <img src="src/images/menu.png" alt="" height="25" id="menu">
+                <img src="src/images/notification.png" alt="">
+            </div>
+            <label class="logo">Mathem</label>
+            <div class="search-box">
+                <form action="">
+                    <img src="src/images/search.png" height="20">
+                    <input type="text" maxlength="80" placeholder="Search thousands of products and recipes" name="q">
+                </form>
+                <button type="submit">
+                    Search
+                </button>
+            </div>
+            <div class="end-button">
+                <img class="notification" src="src/images/notification.png" alt="">
+                <button class="cart-button" id="cart-button">
+                    <img src="src/images/cart.png" alt="">
+                    Shopping cart</button>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Categories <img src="src/images/dropdown.png" alt="" height="12">
+                    <div class="dropdown">
+                        <ul>
+                        <li>Fruit & Vegetables</li>
+                        <li>Dairy, cheese & juice</li>
+                        <li>Bread & bakery</li>
+                        <li>Meat & charcuterie</li>
+                        <li>Drink</li>
+                        <li>Pantry</li>
+                        <li>Fish Shellfish</li>
+                        <li>Home & households</li>
+                    </ul>
+                    </div>
+                </li>
+                <li>Offers <img src="src/images/dropdown.png" alt="" height="12">
+                    <div class="dropdown">
+                        <ul>
+                        <li>Extra prices</li>
+                        <li>Bargain corner</li>
+                    </ul>
+                    </div>
+                </li>
+                <li>More <img src="src/images/dropdown.png" alt="" height="12">
+                    <div class="dropdown">
+                        <ul>
+                        <li>New in the shop</li>
+                        <li>Organic goods</li>
+                        <li>Goods that suit me</li>
+                        <li>Prescription</li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>My page <img src="src/images/dropdown.png" alt="" height="12">
+                    <div class="dropdown">
+                        <ul>
+                        <li>Orders</li>
+                        <li>Recurring delivery</li>
+                        <li>Shopping Lists</li>
+                        <li>Purchased Prescription</li>
+                        <li>Profile</li>
+                        <li>Bonus and credits</li>
+                        <li>Member benefits</li>
+                        <li id="logout">Log out</li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="space"></div>
+        <div class="tabs"></div>
+        <div class="links">
+    
+            <ul>
+                <li><b> Act</b></li>
+                <li>common questions and answers</li>
+                <li>That's how you shop</li>
+                <li>Delivery times</li>
+                <li>Fresh product guarantee</li>
+            </ul>
+            <ul>
+                <li><b>Readymotive</b></li>
+                <li>About Ready</li>
+                <li>Career</li>
+                <li>Press</li>
+                <li>Terms and Policies</li>
+                <li>Readymotive magasin</li>
+            </ul>
+            <ul>
+                <li><b>App</b></li>
+                <li><img src="src/images/apple.png" height="18" style="margin-right: .1rem;">iPhone and iPad</li>
+                <li><img src="src/images/apple.png" height="18" style="margin-right: .1rem;">Apple Watch</li>
+                <li><img src="src/images/apple.png" height="18" style="margin-right: .1rem;">Apple TV</li>
+                <li><img src="src/images/android.png" height="18" style="margin-right: .1rem;">Android</li>
+                <li><img src="src/images/google.png" height="18" style="margin-right: .1rem;">Google Assistant</li>
+            </ul>
+            <ul>
+                <li><b>Contact Us</b></li>
+                <li>Customer service</li>
+                <li>For supplier</li>
+                <li><img src="src/images/facebook.png" height="18" style="margin-right: .1rem;">Facebook</li>
+                <li><img src="src/images/twitter.png" height="18" style="margin-right: .1rem;">Twitter</li>
+                <li><img src="src/images/instagram.png" height="18" style="margin-right: .1rem;">Instagram</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <img src="src/images/footer1.png" alt="">
+            You are in store: Readymotive.
+        </div>
+    </div>
+
+    <button id="chat-button"><img src="src/images/chat.png" alt="" height="20"> Chat</button>
+    
+</body>
+
+<script>
+    var cartopen = false;
+
+document.getElementById("cart-button").onclick = function () {
+    document.getElementById("cart").style.display = "block";
+}
+
+document.getElementById("cart-button-bottom").onclick = function () {
+    if(cartopen == false){
+        document.getElementById("cart").style.display = "block";
+        cartopen = true;
+    }
+    else{
+        document.getElementById("cart").style.display = "none";
+        cartopen = false;
+    }
+    
+}
+
+document.getElementById("close-cart").onclick = function () {
+    document.getElementById("cart").style.display = "none";
+}
+
+document.getElementById("close-desc").onclick = function () {
+    document.getElementById("product-desc").style.display = "none";
+}
+
+var products = document.getElementsByClassName("product");
+
+for (var i = 0; i < products.length; i++) {
+    products[i].onclick = function () {
+        document.getElementById("product-desc").style.display = "flex";
+    }
+}
+
+document.getElementById("menu").onclick = function () {
+    document.getElementById("navigation-mob").style.display = "block";
+}
+
+document.getElementById("close-nav").onclick = function () {
+    document.getElementById("navigation-mob").style.display = "none";
+}
+</script>
+
+</html>
