@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/account.css">
 </head>
+
 <body>
 
     <div class="navigation-mob" id="navigation-mob">
@@ -55,33 +57,33 @@
                 <li>Categories <img src="src/images/dropdown.png" alt="" height="12">
                     <div class="dropdown">
                         <ul>
-                        <li>Fruit & Vegetables</li>
-                        <li>Dairy, cheese & juice</li>
-                        <li>Bread & bakery</li>
-                        <li>Meat & charcuterie</li>
-                        <li>Drink</li>
-                        <li>Pantry</li>
-                        <li>Fish Shellfish</li>
-                        <li>Home & households</li>
-                    </ul>
+                            <li>Fruit & Vegetables</li>
+                            <li>Dairy, cheese & juice</li>
+                            <li>Bread & bakery</li>
+                            <li>Meat & charcuterie</li>
+                            <li>Drink</li>
+                            <li>Pantry</li>
+                            <li>Fish Shellfish</li>
+                            <li>Home & households</li>
+                        </ul>
                     </div>
                 </li>
                 <li>Offers <img src="src/images/dropdown.png" alt="" height="12">
                     <div class="dropdown">
                         <ul>
-                        <li>Extra prices</li>
-                        <li>Bargain corner</li>
-                    </ul>
+                            <li>Extra prices</li>
+                            <li>Bargain corner</li>
+                        </ul>
                     </div>
                 </li>
                 <li>More <img src="src/images/dropdown.png" alt="" height="12">
                     <div class="dropdown">
                         <ul>
-                        <li>New in the shop</li>
-                        <li>Organic goods</li>
-                        <li>Goods that suit me</li>
-                        <li>Prescription</li>
-                    </ul>
+                            <li>New in the shop</li>
+                            <li>Organic goods</li>
+                            <li>Goods that suit me</li>
+                            <li>Prescription</li>
+                        </ul>
                     </div>
                 </li>
             </ul>
@@ -89,15 +91,15 @@
                 <li>My page <img src="src/images/dropdown.png" alt="" height="12">
                     <div class="dropdown">
                         <ul>
-                        <li>Orders</li>
-                        <li>Recurring delivery</li>
-                        <li>Shopping Lists</li>
-                        <li>Purchased Prescription</li>
-                        <li>Profile</li>
-                        <li>Bonus and credits</li>
-                        <li>Member benefits</li>
-                        <li id="logout">Log out</li>
-                    </ul>
+                            <li>Orders</li>
+                            <li>Recurring delivery</li>
+                            <li>Shopping Lists</li>
+                            <li>Purchased Prescription</li>
+                            <li>Profile</li>
+                            <li>Bonus and credits</li>
+                            <li>Member benefits</li>
+                            <li id="logout">Log out</li>
+                        </ul>
                     </div>
                 </li>
             </ul>
@@ -106,9 +108,82 @@
 
     <div class="container">
         <div class="space"></div>
-        <div class="tabs"></div>
+        <div class="account-container">
+            <div class="tabs">
+                <button id="profiletab" onclick="openprofile()">User profile</button>
+                <button id="addresstab" onclick="openaddress()">Address</button>
+            </div>
+
+            <div class="addresses" id="address">
+                <div class="infodiv address">
+                    <h3>My address (0)</h3>
+                    <div class="infocontent">
+                        add address
+                        <div class="add-address"><img src="src/images/addadress.png" alt="" height="30">add</div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="profile" id="profile">
+                    <div class="infodiv email">
+                        <h3>Contact and notifications</h3>
+                        <div class="infocontent">
+                            <h4>email address</h4>
+                            <input type="text" placeholder="example@abc.in">
+                            <button>Save Changes</button>
+                        </div>
+                    </div>
+                    <div class="infodiv">
+                        <h3>User data</h3>
+                        <div class="infocontent">
+                            <h4>Date of birth</h4>
+                            <div class="dobinput">
+                                <h4>Year:</h4>
+                                <input type="text" placeholder="YYYY">
+                            </div>
+                            <div class="dobinput">
+                                <h4>Month:</h4>
+                                <input type="text" placeholder="MM">
+                            </div>
+                            <div class="dobinput">
+                                <h4>Day:</h4>
+                                <input type="text" placeholder="DD">
+                            </div>
+                            <p>Customers older than 70 can take advantage of priority delivery times.</p>
+                            <button>Save Changes</button>
+                        </div>
+                    </div>
+                    <div class="infodiv pass">
+                        <h3>Change Password</h3>
+                        <div class="infocontent">
+                            <div class="inputdiv">
+                                <h4>New passowrd</h4>
+                                <input type="text">
+                            </div>
+                            <div class="inputdiv" style="margin-left: 4%">
+                                <h4>Repeat passowrd</h4>
+                                <input type="text">
+                            </div>
+                            <div class="inputdiv">
+                                <h4>Enter current password to save</h4>
+                                <input type="text">
+                            </div>
+                            <button>Save Changes</button>
+                        </div>
+                    </div>
+                    <div class="infodiv signout">
+                        <h3>Log out</h3>
+                        <div class="infocontent">
+                            <button>Sign out on this device</button>
+                            <button>Log out on all devices</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div class="links">
-    
+
             <ul>
                 <li><b> Act</b></li>
                 <li>common questions and answers</li>
@@ -148,51 +223,68 @@
     </div>
 
     <button id="chat-button"><img src="src/images/chat.png" alt="" height="20"> Chat</button>
-    
+
 </body>
 
 <script>
+
+    function openprofile() {
+        document.getElementById("address").style.display = "none";
+        document.getElementById("profile").style.display = "block";
+        document.getElementById("addresstab").style.backgroundColor = "#cdcdcd"
+        document.getElementById("profiletab").style.backgroundColor = "#26263a"
+    }
+
+    function openaddress(){
+        document.getElementById("profile").style.display = "none";
+        document.getElementById("address").style.display = "block";
+        document.getElementById("addresstab").style.backgroundColor = "#26263a"
+        document.getElementById("profiletab").style.backgroundColor = "#cdcdcd"
+    }
+
+</script>
+<script>
     var cartopen = false;
 
-document.getElementById("cart-button").onclick = function () {
-    document.getElementById("cart").style.display = "block";
-}
-
-document.getElementById("cart-button-bottom").onclick = function () {
-    if(cartopen == false){
+    document.getElementById("cart-button").onclick = function () {
         document.getElementById("cart").style.display = "block";
-        cartopen = true;
     }
-    else{
+
+    document.getElementById("cart-button-bottom").onclick = function () {
+        if (cartopen == false) {
+            document.getElementById("cart").style.display = "block";
+            cartopen = true;
+        }
+        else {
+            document.getElementById("cart").style.display = "none";
+            cartopen = false;
+        }
+
+    }
+
+    document.getElementById("close-cart").onclick = function () {
         document.getElementById("cart").style.display = "none";
-        cartopen = false;
     }
-    
-}
 
-document.getElementById("close-cart").onclick = function () {
-    document.getElementById("cart").style.display = "none";
-}
-
-document.getElementById("close-desc").onclick = function () {
-    document.getElementById("product-desc").style.display = "none";
-}
-
-var products = document.getElementsByClassName("product");
-
-for (var i = 0; i < products.length; i++) {
-    products[i].onclick = function () {
-        document.getElementById("product-desc").style.display = "flex";
+    document.getElementById("close-desc").onclick = function () {
+        document.getElementById("product-desc").style.display = "none";
     }
-}
 
-document.getElementById("menu").onclick = function () {
-    document.getElementById("navigation-mob").style.display = "block";
-}
+    var products = document.getElementsByClassName("product");
 
-document.getElementById("close-nav").onclick = function () {
-    document.getElementById("navigation-mob").style.display = "none";
-}
+    for (var i = 0; i < products.length; i++) {
+        products[i].onclick = function () {
+            document.getElementById("product-desc").style.display = "flex";
+        }
+    }
+
+    document.getElementById("menu").onclick = function () {
+        document.getElementById("navigation-mob").style.display = "block";
+    }
+
+    document.getElementById("close-nav").onclick = function () {
+        document.getElementById("navigation-mob").style.display = "none";
+    }
 </script>
 
 </html>
