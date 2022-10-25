@@ -1121,6 +1121,15 @@ a{
     .cart-bottom{
         width: 82%;
         margin: 0rem;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .cart-bottom-left{
+        display: none;
+    }
+    .cart-bottom button{
+        justify-content: center;
+        margin: auto;
     }
     .fixed{
         width: 100%;
