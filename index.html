@@ -696,7 +696,7 @@
 
 
     <div class="cart-container" id="cart">
-        <div class="shadow"></div>
+        <div class="shadow" id="shadow"></div>
         <div class="cart">
             <div class="cart-head">
                 <h3>Shopping Cart</h3>
@@ -881,6 +881,11 @@
     });
 
     var cartopen = false;
+
+    document.getElementById("shadow").onclick = function(){
+        document.getElementById("cart").style.display = "none";
+        cartopen = false;
+    }
 
     document.getElementById("cart-button").onclick = function () {
         document.getElementById("cart").style.display = "block";
