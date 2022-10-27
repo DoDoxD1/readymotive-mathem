@@ -24,6 +24,7 @@
                     <p>goods ready for delivery to your door</p>
                 </div>
                 <button class="button" id="view-cart">View shopping cart</button>
+                <button class="button" id="view-cart-mob">View</button>
             </div>
             <div class="collapsed" id="cart-collapsed">
                 <div class="cart-item">
@@ -44,6 +45,7 @@
                 </div>
             </div>
             <button class="button-next" id="next-delivery" style="right: 10rem;">Next - Delivery method</button>
+            <button class="button-next" id="next-delivery-mob" style="right: 4.5rem;">Next - Delivery method</button>
             </div>
     </div>
     <div class="delivery">
@@ -53,6 +55,7 @@
                 <p>(address is given in the last step)</p>
             </div>
             <button class="button" id="delivery">Change delivery method</button>
+            <button class="button" id="delivery-mob">Change</button>
         </div>
         <div id="collapsed-delivery">
             <div class="addresses" id="address">
@@ -65,6 +68,7 @@
                 </div>
             </div>
             <button class="button-next" id="next-payment">Next - Payment method</button>
+            <button class="button-next" id="next-payment-mob">Next - Payment method</button>
         </div>
         </div>
         <div class="payment">
@@ -115,6 +119,33 @@
     document.getElementById("next-payment").onclick = function(){
         document.getElementById("collapsed-delivery").style.display = "none";
         document.getElementById("delivery").style.display = "block";
+    }
+
+
+
+
+    // mobile button
+    document.getElementById("delivery-mob").onclick = function(){
+        document.getElementById("collapsed-delivery").style.display = "block";
+        document.getElementById("delivery-mob").style.display = "none";
+        document.getElementById("view-cart-mob").style.display = "block";
+        document.getElementById("cart-collapsed").style.display = "none";
+    }
+    document.getElementById("view-cart-mob").onclick = function(){
+        document.getElementById("cart-collapsed").style.display = "block";
+        document.getElementById("view-cart-mob").style.display = "none";
+        document.getElementById("delivery-mob").style.display = "block";
+        document.getElementById("collapsed-delivery").style.display = "none";
+    }
+    document.getElementById("next-delivery-mob").onclick = function(){
+        document.getElementById("cart-collapsed").style.display = "none";
+        document.getElementById("view-cart-mob").style.display = "block";
+        document.getElementById("collapsed-delivery").style.display = "block";
+        document.getElementById("delivery-mob").style.display = "none";
+    }
+    document.getElementById("next-payment-mob").onclick = function(){
+        document.getElementById("collapsed-delivery").style.display = "none";
+        document.getElementById("delivery-mob").style.display = "block";
     }
 </script>
 
