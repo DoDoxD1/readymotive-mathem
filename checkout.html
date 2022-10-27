@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="stylesheet" href="styles/account.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbarcontent">
+            <a href="#" class="back"> <img src="src/images/back.png" alt="" height="15"> Back</a>
+            <span class="logo">Mathem</span>
+            <a href="#">Customer service 020-15 10 10</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cart">
+            <div class="head">
+                <div class="left">
+                    <h3>Shopping cart</h3>
+                    <p>goods ready for delivery to your door</p>
+                </div>
+                <button class="button">View shopping cart</button>
+            </div>
+            <div class="collapsed">
+
+            </div>
+    </div>
+    <div class="delivery">
+        <div class="head">
+            <div class="left">
+                <h3>Mode of delivery</h3>
+                <p>(address is given in the last step)</p>
+            </div>
+            <button class="button" id="delivery">Change delivery method</button>
+        </div>
+        <div id="collapsed-delivery">
+            <div class="addresses" id="address">
+                <div class="infodiv address">
+                    <h3>My address </h3>
+                    <div class="infocontent">
+                        add address
+                        <div class="add-address"><img src="src/images/addadress.png" alt="" height="30">add</div>
+                    </div>
+                </div>
+                </div>
+                <button class="button2">Next - Payment</button>
+        </div>
+        </div>
+        <div class="payment">
+            <div class="head">
+                <div class="left">
+                    <h3>Payment</h3>
+                    <p>By clicking "Complete purchase" I agree Mathem's General Terms and Conditions and Member Terms , and confirm that I have read Mathem's Privacy Policy .</p>
+                </div>
+            </div>
+            <hr>
+            <h4>Use a discount, bonus or gift card.</h4>
+            <form action="">
+                <input type="text" name="coupon" id="coupon " placeholder="Enter your code here">
+                <button type="submit">Add</button>
+            </form>
+            <div class="port">
+            <h4>Port code</h4>
+            <input type="text" name="port" id="port">
+        </div>
+        <div class="payment-gateway">
+            Payment gateway integration
+        </div>
+</div>
+<button id="chat-button"><img src="src/images/chat.png" alt="" height="20"> Chat</button>
+</div>
+</body>
+
+
+<script>
+    document.getElementById("delivery").onclick = function(){
+        document.getElementById("collapsed-delivery").style.display = "block";
+        document.getElementById("delivery").style.display = "none";
+    }
+</script>
+
+</html>

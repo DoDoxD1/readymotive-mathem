@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Noto Sans', sans-serif;
+}
+
+.topbar{
+    width: 100%;
+    height: 5rem;
+    background-color: #ffecc7;
+}
+
+.topbarcontent{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.topbarcontent a{
+    color: #757c78;
+    text-decoration: none;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+}
+.back img{
+    margin-right: .3rem;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.container{
+    width: 100%;
+    background-color: #fff9ec;
+    padding-top: 1rem;
+}
+
+.cart, .delivery, .payment{
+    margin: auto;
+    width: 80%;
+    padding: 2rem;
+    background-color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head h3{
+    font-size: 1.5rem;
+}
+
+.button{
+    padding: 0rem 2rem;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.delivery , .payment{
+    margin-top: 1rem;
+}
+
+#collapsed-delivery{
+    display: none;
+    position: relative;
+}
+.button2{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.payment p{
+    font-size: .75rem;
+    margin-left: 1rem;
+}
+
+.payment hr{
+    margin: 2rem 0rem;
+    border-top:  solid 1px #bababa;
+}
+.payment h4{    
+    font-weight: 400;
+}
+.payment form{
+    display: flex;
+    margin-top: 1rem;
+}
+.payment input{
+    border: none;
+    padding: 1.5rem;
+    width: 16rem;
+    background-color: #f4f4f5;
+}
+.payment form button{
+    border: none;
+    color: #bababa;
+    padding: 1.5rem;
+    font-weight: 550;
+}
+.port input{
+    padding: .5rem 1rem;
+    width: 30rem;
+}
+.port{
+    margin-top: 2rem;
+}
+.payment-gateway{
+    margin-top: 3rem;
+    color: red;
+    font-weight: 500;
+}
+
+#chat-button{
+    position: fixed;
+    bottom: 4rem;
+    left: 1rem;
+    border: none;
+    background-color: #26263a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+#chat-button img{
+    margin-right: .5rem;
+}
+#address{
+    display: block !important;
+}
