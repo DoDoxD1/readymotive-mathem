@@ -23,10 +23,27 @@
                     <h3>Shopping cart</h3>
                     <p>goods ready for delivery to your door</p>
                 </div>
-                <button class="button">View shopping cart</button>
+                <button class="button" id="view-cart">View shopping cart</button>
             </div>
-            <div class="collapsed">
-
+            <div class="collapsed" id="cart-collapsed">
+                <div class="cart-item">
+                    <h3>Fruit & Vegetables</h3>
+                    <div class="item-desc">
+                        <div class="descleft">
+                        <img src="src/images/potato.jpg" height="30" alt="">
+                        <div>
+                            <h4>Potatoes Boiled/Solid 900g</h4>
+                            <b>22:95</b>
+                        </div>
+                    </div>
+                    <div class="descright">
+                        <img src="src/images/minus.png" height="30" alt="">
+                        1
+                        <img src="src/images/plus.png" height="30" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="button-next" id="next-delivery" style="right: 10rem;">Next - Delivery method</button>
             </div>
     </div>
     <div class="delivery">
@@ -46,8 +63,8 @@
                         <div class="add-address"><img src="src/images/addadress.png" alt="" height="30">add</div>
                     </div>
                 </div>
-                </div>
-                <button class="button2">Next - Payment</button>
+            </div>
+            <button class="button-next" id="next-payment">Next - Payment method</button>
         </div>
         </div>
         <div class="payment">
@@ -80,6 +97,24 @@
     document.getElementById("delivery").onclick = function(){
         document.getElementById("collapsed-delivery").style.display = "block";
         document.getElementById("delivery").style.display = "none";
+        document.getElementById("view-cart").style.display = "block";
+        document.getElementById("cart-collapsed").style.display = "none";
+    }
+    document.getElementById("view-cart").onclick = function(){
+        document.getElementById("cart-collapsed").style.display = "block";
+        document.getElementById("view-cart").style.display = "none";
+        document.getElementById("delivery").style.display = "block";
+        document.getElementById("collapsed-delivery").style.display = "none";
+    }
+    document.getElementById("next-delivery").onclick = function(){
+        document.getElementById("cart-collapsed").style.display = "none";
+        document.getElementById("view-cart").style.display = "block";
+        document.getElementById("collapsed-delivery").style.display = "block";
+        document.getElementById("delivery").style.display = "none";
+    }
+    document.getElementById("next-payment").onclick = function(){
+        document.getElementById("collapsed-delivery").style.display = "none";
+        document.getElementById("delivery").style.display = "block";
     }
 </script>
 
