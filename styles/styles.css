@@ -670,6 +670,9 @@ a{
     border-radius: 5rem;
     margin-right: -1.5rem;
 }
+.cart-bottom button a{
+    color: white;
+}
 #close-cart{
     cursor: pointer;
 }
