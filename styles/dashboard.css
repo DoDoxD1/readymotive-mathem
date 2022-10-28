@@ -42,12 +42,28 @@
     border-right: rgb(215, 215, 215) solid 1px;
     z-index: 2;
 }
-.sidebar ul{
+.sidebar a{
+    color: #6ecc96;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.collapse{
+    margin-left: 2rem;
+}
+.collapse li{
+    margin-top: 1rem;
+}
+.mb-1{
+    padding: 1rem;
+    color: #28af62;
+}
+/* .sidebar ul{
     padding: 1rem;
     display: block;
     margin: auto;
     margin-top: 2rem;
-}
+} */
+/*
 .sidebar li{
     width: 70%;
     margin: auto;
@@ -61,15 +77,11 @@
 .sidebar li img{
     margin-right: .3rem;
 }
-.sidebar a{
-    color: #6ecc96;
-    text-decoration: none;
-    transition: 0.3s;
-}
+
 .sidebar a:active,
 .sidebar li:hover{
     background-color: #e1ffe3;
-}
+} */
 
 #logout-button{
     border: none;
