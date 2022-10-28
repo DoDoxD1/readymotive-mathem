@@ -7,6 +7,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles/dashboard.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
     <div class="main-container">
@@ -16,16 +18,21 @@
             <span class="logo2">Shop</span>
 
         </div>
-        <ul>
-            <li> <img src="src/images/dashboard.png" alt="" height="22"> <a href="/dashboard.html">Dashboard</a></li>
-            <li> <img src="src/images/categories.png" alt="" height="22"> <a href="">Categories</a></li>
-            <li> <img src="src/images/favourite.png" alt="" height="22"> <a href="">Favourite</a></li>
-            <li> <img src="src/images/orders.png" alt="" height="22"> <a href="">Orders</a></li>
-            <li> <img src="src/images/message.png" alt="" height="22"> <a href="">Message</a></li>
-            <li> <img src="src/images/top.png" alt="" height="22"> <a href="">Top Deals</a></li>
-            <li> <img src="src/images/settings.png" alt="" height="22"> <a href="">Settings</a></li>
+        <!-- <ul>
+            <li> <div class="flex"> <img src="src/images/dashboard.png" alt="" height="22"> <a href="/dashboard.html">Dashboard</a></div></li>
+            <li><div class="flex" id="category-menu-button"> <img src="src/images/categories.png" alt="" height="22"> <a href="">Categories <a href="/dashboard.html"></a></div>
+            <ul class="category-menu">
+                <li>sub cat</li>
+                <li>fruits</li>
+            </ul>
+            </li>
+            <li> <div class="flex"> <img src="src/images/favourite.png" alt="" height="22"> <a href="">Favourite</a></div></li>
+            <li> <div class="flex"> <img src="src/images/orders.png" alt="" height="22"> <a href="">Orders</a></div></li>
+            <li> <div class="flex"> <img src="src/images/message.png" alt="" height="22"> <a href="">Message</a></div></li>
+            <li> <div class="flex"> <img src="src/images/top.png" alt="" height="22"> <a href="">Top Deals</a></div></li>
+            <li> <div class="flex"> <img src="src/images/settings.png" alt="" height="22"> <a href="">Settings</a></div></li>
             <button id="logout-button"><img src="src/images/logout.png" alt="" height="20"> Log Out</button>    
-        </ul>
+        </ul> -->
         
     </div>
     <div class="container">
@@ -198,5 +205,10 @@
             document.getElementById("sidebar").style.display = 'none';
         }
     }
+    document.getElementById("category-menu-button").onclick = function(){
+        document.getElementById("category-menu").style.display = 'block !important';
+    }
 </script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </html>
